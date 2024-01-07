@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE-edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <script src="https://kit.fontawesome.com/4f57f53f6e.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+   <div id = header> 
+        <div class="container">
+            
+            <div class="title">
+                <h1>
+                    
+                    Hi. I'm Yohan.
+                </h1>
+
+            </div>
+            
+            
+        </div>
+   
+   
+        <div class="link">
+            
+        <nav> 
+            <ul>
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#portfolio">Portfolio</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        </nav>   
+         <div class="header-text">
+            <h1>Computer Science Student <br>at UW Madison  </h1>
+         </div> 
+        </div>
+    </div>
+    
+    <!-----------about---------------->
+    <div id="about">
+        <div class="link">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Yohan-LinkedIN-Vert.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p align="left" class = "about-me-text">
+                        I am a junior at UW Madison, and am originally from the vibrant city of Portland, Oregon. 
+                        I am currently seeking an internship opportunity for the summer of 2024, and my primary interests are machine learning, cloud computing, and data processing. If I'm not behind a computer screen, you will likely find me on the tennis court. I am looking forward to leveraging my skills and knowledge in these areas to make a meaningful contribution and further my professional growth.
+                    </p>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick = "opentab('Skills')">Skills</p>
+                        <p class = "tab-links" onclick = "opentab('Experience')">Experience</p>
+                        <p class = "tab-links" onclick = "opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "Skills">
+                        <ul>
+                            <li><span>Python</span><br>Big Data Processing, Machine Learning, Cloud Computing</li>
+                            <li><span>Java</span><br>Algorithms, Data Structures</li>
+                            <li><span>C</span><br>Operating Systems, Memory/Caches</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "Experience">
+                        <ul>
+                            <li><span>June 2023 - Current</span><br>Research Assistant at UW Madison School of Materials Science & Engineering</li>
+                            <li><span>January 2023 - May 2023</span><br>Intern at ShenZhen JiangYun Intelligence</li>
+                            <li><span>June 2021 - August 2022</span><br>Topocoder at Traffic Technology Services</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "Education">
+                        <ul>
+                            <li><span>UW Madison (Expected May 2025)</span><br>BS. in Computer Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------portfolio---------------->
+<div id="portfolio">
+    <div class="link">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            
+            <div class="work">
+                
+                    <img src="images/Covid-image.png">
+                    <div class="layer">
+                        <h2>AI Covid Detector</h2>
+                        <p>Predicts how many deaths there will be for a Wisconsin census tract.</p>
+                        <a href = "https://github.com/yohanpandya/Python-AI-Covid-Detector"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a> 
+                    </div>
+            </div>
+            <div class="work">
+                    
+                
+                
+                    <img src="images/Post-Office-image.png">
+                    <div class="layer">
+                        <h2>Post Office Simulator</h2>
+                        <p>Uses Djikstra's Algorithm to find the shortest time for a package transfer between two post offices.</p>
+                        <a href = "https://github.com/yohanpandya/Java-PostOffice"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a> 
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="images/Kafka-image.png">
+                    <div class="layer">
+                        <h2>Kafka Weather Data</h2>
+                        <p>Utilizes Kafka to send messages about weather data</p>
+                        <a href = "https://github.com/yohanpandya/Python_KafkaWeatherData"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a> 
+                    </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!------------------contact------------->
+<div id="contact">
+    <div class="link">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>yvpandya@wisc.edu</p>
+                <p><i class="fa-solid fa-phone"></i>503-268-2756</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/yyohhan/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yohan-pandya-4401b4255/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/yohanpandya?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Yohan Pandya Resume (31).pdf" download class="btn btn2"> Download Resume</a>
+
+            
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows = "6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+      
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzEQVzCsIs7Ds0Nt0ATQnZVxNCBVIRmogIpZAgjz0zgdzpPoVoGHUiT6sRYJWrj9_DhwQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+            
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
