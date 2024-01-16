@@ -1,4 +1,0 @@
-Portfolio website coded from scratch using HTML, CSS and JS.
-
-Click this link and send me a message! 
-https://yohanpandya.github.io/
